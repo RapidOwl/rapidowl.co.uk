@@ -1,0 +1,185 @@
+/*
+    Color palette: http://duoparadigms.com/2013/10/11/10-color-palettes-perfect-autumnfall-season/
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-family: 'Concert One', cursive;
+    line-height: 1;
+    background-color: #F59A44;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0 30px;
+    background-color: #8A211D;
+    border-bottom: 5px solid #F59A44;
+    color: #E3C598;
+}
+
+header h1 {
+    font-size: 48pt;
+    margin-bottom: 20px;
+}
+
+header h3 {
+    font-size: 24pt;
+}
+
+.header-column {
+    max-width: 500px;
+    margin: auto;
+}
+
+.content-wrapper {
+    border-top: 5px solid #8A211D;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*.box {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    display: inline-block;
+    margin: 20px;
+}*/
+
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.zoom-box-small-container {
+    display: inline-block;
+    height: 145px;
+    width: 145px;
+}
+
+.zoom-box-small {
+    border: 3px solid black;
+    margin: 20px;
+    transition: all 0.4s ease;
+    display: inline-block;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-image: url('../images/github.svg');
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.zoom-box-small:hover {
+    height: 110px;
+    min-width: 110px;
+    margin: 15px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+    background-size: 90px 90px;
+    background-color: #E3C598;
+}
+
+.zoom-box-container {
+    display: inline-block;
+    min-height: 200px;
+    width: 200px;
+}
+
+.zoom-box {
+    display: inline-block;
+    border: 5px solid black;
+    margin: 20px;
+    transition: all 0.3s ease;
+    height: 150px;
+    min-width: 150px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    /*background-image: url('../images/github.svg');
+    background-size: 120px 120px;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.zoom-box:hover {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+    background-color: #E3C598;
+    transform: scale(1.1);
+}
+
+.zoom-box p {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.zoom-box img {
+    display: block;
+    height: 94px;
+    width: 94px;
+    margin: 10px auto;
+}
+
+
+/*
+TODO Make the resize not flickr in Edge...
+TODO Move the zoombox non-size properties onto another class.
+TODO Have a separate class for the look and feel type properties.
+TODO Calculate how big the sizes need to be in order to take into account the borders etc. for making the zoom boxes bigger.
+TODO Set up build process for minifying all the things.
+TODO Make the box sizes calculated from a single point in SASS.
+*/
