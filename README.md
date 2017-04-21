@@ -1,3 +1,3 @@
-# samstrong.me.uk
+# rapidowl.co.uk
 
-https://rapidowl.github.io/samstrong.me.uk/
+https://rapidowl.github.io/rapidowl.co.uk/
